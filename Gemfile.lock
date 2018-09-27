@@ -59,6 +59,8 @@ GEM
     factory_bot_rails (4.11.1)
       factory_bot (~> 4.11.1)
       railties (>= 3.0.0)
+    faker (1.9.1)
+      i18n (>= 0.7)
     ffi (1.9.25)
     globalid (0.4.1)
       activesupport (>= 4.2.0)
@@ -176,12 +178,13 @@ PLATFORMS
 
 DEPENDENCIES
   bootsnap (>= 1.1.0)
-  bson_ext
+  bson_ext (~> 1.5.1)
   byebug
   database_cleaner
   factory_bot_rails
+  faker
   listen (>= 3.0.5, < 3.2)
-  mongoid
+  mongoid (~> 7.0.2)
   mongoid-rspec
   puma (~> 3.11)
   rails (~> 5.2.1)
